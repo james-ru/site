@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="images/favicon.png" />
+<title>Mathematical Proofs | James Rupert</title>
+<meta name="title" content="Mathematical Proofs" />
+<meta name="description" content="Resources:  Mathematical proofs - a transition to advanced mathematics started: somewhere in the first week of July 2022, Switzerland trip. One small pitfall: I skipped a lot of exercices that were a lot of work or lengthy. Not smart.
+  Slides: https://media.pearsoncmg.com/cmg/pmmg_mml_shared/Chartrand_4e/
+  Sets  subset A set \(A\) is called a subset of a set \(B\) if every element of \(A\) also belongs to \(B\). Notation: \(A \subseteq B\) proper subset A set \(A\) is a proper subset of a set \(B\) if \(A \subseteq B\) but \(A \neq B\)." />
+<meta name="keywords" content="todo,math," />
+
+
+<meta property="og:title" content="Mathematical Proofs" />
+<meta property="og:description" content="Resources:  Mathematical proofs - a transition to advanced mathematics started: somewhere in the first week of July 2022, Switzerland trip. One small pitfall: I skipped a lot of exercices that were a lot of work or lengthy. Not smart.
+  Slides: https://media.pearsoncmg.com/cmg/pmmg_mml_shared/Chartrand_4e/
+  Sets  subset A set \(A\) is called a subset of a set \(B\) if every element of \(A\) also belongs to \(B\). Notation: \(A \subseteq B\) proper subset A set \(A\) is a proper subset of a set \(B\) if \(A \subseteq B\) but \(A \neq B\)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/notes/20230308230006-mathematical_proofs/" /><meta property="og:image" content="images/share.png"/><meta property="article:section" content="notes" />
+
+
+
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="images/share.png"/>
+
+<meta name="twitter:title" content="Mathematical Proofs"/>
+<meta name="twitter:description" content="Resources:  Mathematical proofs - a transition to advanced mathematics started: somewhere in the first week of July 2022, Switzerland trip. One small pitfall: I skipped a lot of exercices that were a lot of work or lengthy. Not smart.
+  Slides: https://media.pearsoncmg.com/cmg/pmmg_mml_shared/Chartrand_4e/
+  Sets  subset A set \(A\) is called a subset of a set \(B\) if every element of \(A\) also belongs to \(B\). Notation: \(A \subseteq B\) proper subset A set \(A\) is a proper subset of a set \(B\) if \(A \subseteq B\) but \(A \neq B\)."/>
+
+
+
+<meta itemprop="name" content="Mathematical Proofs">
+<meta itemprop="description" content="Resources:  Mathematical proofs - a transition to advanced mathematics started: somewhere in the first week of July 2022, Switzerland trip. One small pitfall: I skipped a lot of exercices that were a lot of work or lengthy. Not smart.
+  Slides: https://media.pearsoncmg.com/cmg/pmmg_mml_shared/Chartrand_4e/
+  Sets  subset A set \(A\) is called a subset of a set \(B\) if every element of \(A\) also belongs to \(B\). Notation: \(A \subseteq B\) proper subset A set \(A\) is a proper subset of a set \(B\) if \(A \subseteq B\) but \(A \neq B\).">
+
+<meta itemprop="wordCount" content="1744"><meta itemprop="image" content="images/share.png"/>
+<meta itemprop="keywords" content="todo,math," />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: Inter, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #282832;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+    color: #222;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3, h4, h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size:14.5px;
+}
+
+a {
+    color: #3273dc;
+}
+
+.title {
+    text-decoration: none;
+    border: 0;
+}
+
+.title span {
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    color: #282832;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #2380ed;
+}
+
+#nav-title {
+    margin-right: auto;
+}
+
+nav a {
+    display: flex;
+}
+
+textarea {
+    width: 100%;
+    font-size: 16px;
+}
+
+input {
+    font-size: 16px;
+}
+
+content {
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+}
+
+pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+}
+
+div.highlight pre {
+    background-color: initial;
+    color: initial;
+}
+
+div.highlight code {
+    background-color: unset;
+    color: unset;
+}
+
+blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+}
+
+.helptext {
+    color: #777;
+    font-size: small;
+}
+
+.errorlist {
+    color: #eba613;
+    font-size: small;
+}
+
+ 
+ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.blog-posts li {
+    display: flex;
+}
+
+ul.blog-posts li span {
+    flex: 0 0 130px;
+}
+
+ul.blog-posts li a:visited {
+    color: #8b6fcb;
+}
+
+hr {
+    border: none;
+    border-top: 1px dashed #999;
+    color: #333;
+    overflow: visible;
+    height: 1px;
+    margin: 2em 0;
+}
+
+a[href$="/missing"] {
+    background-color: #E5E5E5;
+    color: #5D5D67;
+    padding: 0rem 0.2rem 0rem 0.2rem;
+}
+
+a[href^="http"] {
+    background-image: url(/img/external-link.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 1.3rem;
+}
+
+.related-wrapper {
+    column-count: 2;
+    display: grid;
+    grid-gap: 0.6rem 0.6rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.noteslist-feed {
+    color: #282832;
+    display: block;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.noteslist-feed h6 {
+    padding: 0.6rem 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.noteslist-feed:hover h6 {
+    color: #2380ed;
+}
+
+.excerpt {
+    color: #5D5D67;
+    text-decoration: none;
+    font-size: 14.5px;
+    margin: 0 0 0 0;
+}
+
+table {
+    display: table;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: left;
+    border: 0.1rem solid #bfbfbf;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+table th {
+    font-weight: 600;
+    padding: 0.3rem 0.6rem 0;
+    border-bottom: 0.1rem solid #000;
+}
+
+table td {
+    padding: 0.3rem 0.6rem 0;
+    border-bottom: 0.1rem solid #bfbfbf;
+}
+</style>
+<link rel="stylesheet" href=" style.css">
+</head>
+
+<body>
+  <header>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+<nav><a href="../../" class="title">
+    <h2 id="nav-title">James Rupert</h2>
+</a>
+
+<ul>
+
+  <li>
+    <a href="../../">About</a>
+  </li>
+
+  <li>
+    <a href="../../notes/">Notes</a>
+  </li>
+
+
+
+</ul>
+
+</nav>
+</header>
+  <main>
+<h1 style="padding-top: 2rem;">Mathematical Proofs</h1>
+<hr>
+<content style="margin-top: 5rem;">
+  <p><!-- raw HTML omitted -->Resources:<!-- raw HTML omitted --></p>
+<ul>
+<li>
+<p><strong>Mathematical proofs - a transition to advanced mathematics</strong>
+started: somewhere in the first week of July 2022, Switzerland trip. One small pitfall: I skipped a lot of exercices that were a lot of work or lengthy. Not smart.</p>
+</li>
+<li>
+<p>Slides: <a href="https://media.pearsoncmg.com/cmg/pmmg_mml_shared/Chartrand_4e/">https://media.pearsoncmg.com/cmg/pmmg_mml_shared/Chartrand_4e/</a></p>
+</li>
+</ul>
+<h2 id="sets">Sets</h2>
+<dl>
+<dt>subset</dt>
+<dd>A set \(A\) is called a <strong>subset</strong> of a set \(B\) if every element of \(A\) also belongs to \(B\).
+Notation: \(A \subseteq B\)</dd>
+<dt>proper subset</dt>
+<dd>A set \(A\) is a <strong>proper subset</strong> of a set \(B\) if \(A \subseteq B\) but \(A \neq B\).
+Notation: \(A \subset B\)</dd>
+<dt>subset vs proper subset</dt>
+<dd>A subset is a collection of objects from a set. A proper subset is any subset which is not the set itself.</dd>
+<dt>index sets</dt>
+<dd>Index sets allow us to describe the union/intersection of some sets in a more &lsquo;specific&rsquo; way as opposed to <strong>sigma</strong> notation.
+<ul>
+<li>
+<p>sigma way: \(\bigcup_{i=1}^n A_i = A_1 \cup A_2 \cup \ldots \cup A_n\)</p>
+</li>
+<li>
+<p>now consider instead an <strong>arbitrary</strong> index set \(I = \{1, 2, 4, 6\}\)</p>
+<p>Suppose a set \(S_\alpha\) exists for each \(\alpha \in I\). (alternatively, look at this as \(A_\alpha\)).</p>
+<p>The <strong>indexed collection of sets</strong> (which is the collection of all sets \(S_\alpha\), where \(\alpha \in I\)) is then \(\{S_\alpha\}_{\alpha \in I}\). We can now define the union and intersection:</p>
+<p>\(\displaystyle \bigcup_{\alpha \in I} S_\alpha = \{x : x \in S_\alpha \text{ for some } \alpha \in I\}\)</p>
+<p>\(\displaystyle \bigcap_{\alpha \in I} S_\alpha = \{x : x \in S_\alpha \text{ for all } \alpha \in I\}\)</p>
+<p>Index sets literally allow us to look at certain indices of sets, as if we&rsquo;re using a loop with specific arrays to go through specifically.</p>
+<p>resource for understanding: <a href="https://www.youtube.com/watch?v=PvhRD_h7Q9I">https://www.youtube.com/watch?v=PvhRD_h7Q9I</a></p>
+</li>
+</ul>
+</dd>
+</dl>
+<h2 id="logic">Logic</h2>
+<dl>
+<dt>biconditional</dt>
+<dd>The biconditional \(p \Leftrightarrow q\) exists out of the conjunction of \(p\) implies \(q\) and its converse.
+<p>Recall that \(p \implies q\) is only false when \(p\) is true and \(q\) is false. Conversely, \(q \implies p\) is only false when \(q\) is true and \(p\) is false. The other information is never being spoken about in these two statements (except for the implications mentioned), hence they are true.</p>
+<p>This means that when we have a T/F or F/T situation, the conjunction is false. Otherwise, in a T/T or F/F situation, the conjunction is true.</p>
+<p>also denoted as <strong>if and only if</strong> or <strong>&hellip; equivalent to &hellip;</strong>  or <strong>&hellip; is a necessary and sufficient condition for &hellip;</strong></p>
+</dd>
+<dt>logically equivalent</dt>
+<dd>Two statements \(R\) and \(S\) are logically equivalent when both have the same truth values for all combinations of truth values.
+<p>Having the same truth values means that the biconditional of these two statements are T for all truth values. Hence we can say that two statements are also logically equivalent if <strong>the biconditional is a tautology</strong>.</p>
+<p>Conversely, if the biconditional is a tautology, the statement is logically equivalent.</p>
+</dd>
+</dl>
+<h2 id="direct-proof-and-proof-by-contrapositive">Direct Proof and Proof by Contrapositive</h2>
+<p><!-- raw HTML omitted -->Without loss of generality<!-- raw HTML omitted --></p>
+<ul>
+<li><a href="https://math.stackexchange.com/questions/129137/use-of-without-loss-of-generality">Use of &ldquo;without loss of generality&rdquo;</a></li>
+<li>indicates an assumption is chosen arbitrarily, narrowing the premise to a particular case, but does not affect the validity of the proof in general</li>
+</ul>
+<h2 id="more-on-proof-and-proof-by-contrapositive">More on Proof and Proof by Contrapositive</h2>
+<dl>
+<dt>extra</dt>
+<dd><a href="https://faculty.nps.edu/rgera/current_classes/MA1025/Ch4.pdf">https://faculty.nps.edu/rgera/current_classes/MA1025/Ch4.pdf</a></dd>
+<dt>more on congruence</dt>
+<dd><a href="https://www.math.nyu.edu/~hausner/congruence.pdf">https://www.math.nyu.edu/~hausner/congruence.pdf</a></dd>
+</dl>
+<h3 id="proofs-involving-divisibility-of-integers">Proofs Involving Divisibility of Integers</h3>
+<p>When we say that \(a \mid b\), we say that there is an integer \(c\) such that \(b = ac\). This also means that \(b\) is a multiple of \(a\).</p>
+<p>For example: \(2 \mid x\) iff \(x = 2k, \exists k \in \mathbb{Z}\). This means that the integer 2 is a factor of \(x\).</p>
+<p>If \(a\) does not divide \(b\), we write \(a \nmid b\). Then there exists no such integer \(c\) for \(b = ac\). If for example \(3 \nmid x\), then we can write that \(x = 3k + 1, x = 3k + 2, \exists k \in \mathbb{Z}\).</p>
+<p>\(4 \nmid 66\) because there is no integer \(c\) such that \(66 = 4c\). However, we do have a \(c\) if we write \(66 = 4c + 2\) (but this doesn&rsquo;t hold for +1, +3 like mentioned above so I&rsquo;m not sure what&rsquo;s going on). =&gt; <strong>this depends on what the remainder is of course!</strong></p>
+<p>Apparently we will have <strong>the division algorithm</strong> later on in chapter 11. Let me give an example. If an integer \(n\) is not a multiple of 3, then we can write \(n = 3q + 1\) or \(n = 3q + 2\) for some integer \(q\). This is because \(0, 1, 2\) are the only remainders that can result when an integer is divided by 3. And for 4 we have +1, +2, +3, this goes on and on.</p>
+<h3 id="proofs-involving-congruence-of-integers">Proofs Involving Congruence of Integers</h3>
+<p>recall what divisibility is&hellip;means that there is an integer c such that&hellip;</p>
+<p><strong>Theorem</strong>. Let \(x, y \in \mathbb{Z}\). Then \(x\) and \(y\) are of the same parity if and only if \(2 \mid (x - y)\). <!-- raw HTML omitted --></p>
+<p><strong>Strategy</strong>. This is a biconditional statement \(p \iff q\). For \(p \implies q\) we will consider a direct proof and for its converse, \(q \implies p\), we will use a proof by contrapositive such that \(\neg p \implies \neg q\). <!-- raw HTML omitted --></p>
+<p><strong>Proof</strong>. Assume that \(x,y\) are of the same parity. Then we have the following two cases:</p>
+<ol>
+<li>
+<p>\(x\) and \(y\) are both even. Thus \(x = 2a\) and \(y = 2b\) for \(a, b \in \mathbb{Z}\). Then:
+\[x - y = 2a - 2b = 2(a-b)\]</p>
+<p>Because \(a-b\) is an integer, it follows that \(2 \mid (x-y)\).</p>
+</li>
+<li>
+<p>\(x\) and \(y\) are both odd. Thus \(x = 2c + 1\) and \(y = 2d+1\) for \(c, d \in \mathbb{Z}\). Then:
+\[x - y = 2c + 1 - (2d + 1) = 2c - 2d = 2(c-d)\]</p>
+<p>Because \(c-d\) is an integer, it follows that \(2 \mid (x-y)\).</p>
+</li>
+</ol>
+<p>For the converse, let us assume that \(x\) and \(y\) are not of the same parity. We must show that \(2 \nmid (x-y)\). We will have two cases.</p>
+<ol>
+<li>
+<p>\(x\) is even, \(y\) is odd. Then \(x = 2a\) and \(y = 2b+1\) for some \(a,b \in \mathbb{Z}\). Then</p>
+<p>\[(x-y) = 2a - 2b - 1 = 2(a-b) - 1\]</p>
+<p>Since \(a-b\) is an integer, \(2 \nmid (x-y)\).</p>
+</li>
+<li>
+<p>Same procedure as above. \(\blacksquare\)</p>
+</li>
+</ol>
+<p><strong>Congruency</strong></p>
+<blockquote>
+<p>We say integers a and b are &ldquo;congruent modulo n&rdquo; if their difference is a multiple of n.</p>
+</blockquote>
+<h2 id="existence-and-proof-by-contradiction">Existence and Proof by Contradiction</h2>
+<p>Some quantified statements of the type \(\forall x \in S, R(x)\) are false. In essence, this means the following:</p>
+<p>\begin{equation}
+\neg (\forall x \in S, R(x)) \equiv \exists x \in S, \neg R(x))
+\end{equation}</p>
+<p>Meaning, if the statement \(\forall x \in S, R(x)\) is false, then there exists some element \(x\) for which \(R(x)\) is false. This element \(x\) is a <strong>counterexample</strong> of the given statement above.</p>
+<p>Note that this shows an underlying asymmetry. To show that this statement is false, only a single counterexample is required. It does <em>not</em> require proving some other result. For the other way, a more in-depth approach is required (see the end of this chapter in the book).</p>
+<p>In a <strong>proof by contradiction</strong>, we assume the statement is a false statement. If we then deduce a statement that contradicts a <em>known</em> assumption (an axiom, fact, theorem, definition, &hellip;), we know the original statement is true (because there is no way for it to be false, as it results in a contradiction). The following paragraph explores our intuition behind it.</p>
+<p>\(\forall x \in S, P(x) \implies Q(x)\). Assume \(R\) is a false statement. Suppose this contradicts an assumption we call \(P\), then we have deduced \(\neg P\). This produces the contradiction \(C: P \wedge (\neg P)\). We then have found the truth of the implication \((\neg R) \implies C\). Because this implication is true and \(C\) is false, it follows that \(\neg R\) is false and so \(R\) is true (because there is no other way for the implication to be true!).</p>
+<p>(recall the implication table)</p>
+<table>
+<thead>
+<tr>
+<th>p</th>
+<th>q</th>
+<th>p ⇒ q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+</tr>
+<tr>
+<td>T</td>
+<td>F</td>
+<td>F</td>
+</tr>
+<tr>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+</tr>
+<tr>
+<td>F</td>
+<td>F</td>
+<td>T</td>
+</tr>
+</tbody>
+</table>
+<h2 id="proof-by-induction">Proof by Induction</h2>
+<p>check later:</p>
+<ul>
+<li><a href="https://math.stackexchange.com/questions/1184541/what-exactly-is-the-difference-between-weak-and-strong-induction">What exactly is the difference between weak and strong https?</a></li>
+<li><a href="https://math.stackexchange.com/questions/1139579/why-is-mathematical-induction-a-valid-proof-technique/1139606#1139606">Why is mathematical induction a valid proof technique? [duplicate]​</a></li>
+</ul>
+<p><strong>Defs</strong></p>
+<dl>
+<dt>principle of mathematical induction</dt>
+<dd>For each positive integer \(n\), let \(P(n)\) be a statement. If:
+<ol>
+<li>\(P(1)\) is true and</li>
+<li>the implication: if \(P(k)\), then \(P(k+1)\) is true for every positive integer \(k\),</li>
+</ol>
+<p>then \(P(n)\) is true for every positive integer \(n\).</p>
+</dd>
+<dt>principle of mathematical induction (more general)</dt>
+<dd>For a fixed integer \(m\), let \(S = \{i \in \mathbb{Z} : i \geq m\}\).
+For each integer \(n \in S\), let \(P(n)\) be a statement. If
+<ol>
+<li>\(P(m)\) is true and</li>
+<li>the implication: if \(P(k)\), then \(P(k+1)\) is true for every positive integer \(k\),</li>
+</ol>
+<p>then \(P(n)\) is true for every integer \(k \in S\).</p>
+</dd>
+<dt>proof by minimum counterexample</dt>
+<dd>hybrid of induction and proof by contradiction
+Proposition. The statements \(S_1, S_2, S_3, \ldots\) are all true.
+<ol>
+<li>Check that the first statement \(S_1\) is true.</li>
+<li>For the sake of contradiction, suppose not every \(S_n\) is true.</li>
+<li>Let \(k &gt; 1\) be the smallest integer for which \(S_k\) is <strong>false</strong>.</li>
+<li>Then \(S_{k-1}\) is true and \(S_k\) is false. Use this to get a contradiction.</li>
+</ol>
+</dd>
+</dl>
+<blockquote>
+<p>For the universally quantified statement ∀n ∈ N, P(n), a proof by smallest counterexample assumes that P(1) is true, but that there is a smallest k &gt; 1 such that P(k) is false.
+This sets up the scenario where, because k is the smallest value for which P(k) is false, that P(k − 1) is true.
+Using P(k − 1) being true and P(k) being false, we seek a contradiction</p>
+</blockquote>
+<dl>
+<dt>strong principle of mathematical induction</dt>
+<dd>For each positive integer \(n\), let \(P(n)\) be a statement. If
+<ol>
+<li>\(P(1)\) is true and</li>
+<li>the implication: if \(P(i)\) for every integer \(i\) with \(1 \leq i \leq k\), then \(P(k+1)\) is true for every positive integer \(k\),</li>
+</ol>
+<p>then \(P(n)\) is true for every positive integer \(n\).</p>
+</dd>
+<dt>strong principle of mathematical induction (more general)</dt>
+<dd>For a fixed integer \(m\), let \(S = \{i \in \mathbb{Z} : i \geq m\}\).
+For each integer \(n \in S\), let \(P(n)\) be a statement. If
+<ol>
+<li>\(P(m)\) is true and</li>
+<li>the implication: if \(P(i)\) for every integer \(i\) with \(m \leq i \leq k\), then \(P(k+1)\) is true for every positive integer \(k\),</li>
+</ol>
+<p>then \(P(n)\) is true for every integer \(n \in S\).</p>
+</dd>
+</dl>
+<h2 id="prove-or-disprove">Prove or Disprove</h2>
+<h2 id="equivalence-relations">Equivalence relations</h2>
+<p><strong>Theorem</strong>. Let \(R\) be an equivalence relation on a nonempty set \(A\) and let \(a\) and \(b\) be elements of A. Then \([a] = [b]\) if and only if \(a  R b\).</p>
+
+</content>
+<p>
+  
+  <a href="../../blog/todo/">#todo</a>
+  
+  <a href="../../blog/math/">#math</a>
+  
+</p>
+
+  </main>
+  <footer>
+</footer>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<a href="{{ "" | relURL }}" class="title">
+    <h2 id="nav-title">{{ .Site.Title }}</h2>
+</a>
+
+<ul>
+{{ range .Site.Menus.main }}
+  <li>
+    <a href="{{ .URL }}">{{ .Name }}</a>
+  </li>
+{{ end }}
+
+{{ with .Site.GetPage "/blog" }}
+    <li>
+        <a href="{{ "blog" | relURL }}">Blog</a>
+    </li>
+{{ end }}
+</ul>
+

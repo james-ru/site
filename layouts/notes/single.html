@@ -1,0 +1,12 @@
+{{ define "main" }}
+<h1 style="padding-top: 1rem;">{{ .Title }}</h1>
+<hr>
+<content style="margin-top: 5rem;">
+  {{ .Content }}
+</content>
+<p>
+  {{ range (.GetTerms "tags") }}
+  <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+  {{ end }}
+</p>
+{{ end }}

@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="images/favicon.png" />
+<title>Real Analysis | James Rupert</title>
+<meta name="title" content="Real Analysis" />
+<meta name="description" content="Useful resources
+ video Prof. Francis Su (Rudin), Marc Renault (Abbott) notes Prof. Francis Su (Rudin) extra resources Spivak  MTH 320 has problem sets from the Abbott book with solutions. Useful to know which exercices to do optimally.
+1. The Real Numbers ATTACH  Difference upper bound, maximum and supremum (Example 1.3.5).  open interval \((0,2) = \{x \in \mathbb R: 0 &lt; x &lt; 2\}\) closed interval \([0,2] = \{x \in \mathbb R: 0 \leq x \leq 2\}\)  The open interval has no maximum (that is, the biggest element apart of the set) while the closed interval does." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Real Analysis" />
+<meta property="og:description" content="Useful resources
+ video Prof. Francis Su (Rudin), Marc Renault (Abbott) notes Prof. Francis Su (Rudin) extra resources Spivak  MTH 320 has problem sets from the Abbott book with solutions. Useful to know which exercices to do optimally.
+1. The Real Numbers ATTACH  Difference upper bound, maximum and supremum (Example 1.3.5).  open interval \((0,2) = \{x \in \mathbb R: 0 &lt; x &lt; 2\}\) closed interval \([0,2] = \{x \in \mathbb R: 0 \leq x \leq 2\}\)  The open interval has no maximum (that is, the biggest element apart of the set) while the closed interval does." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/notes/20230812185640-understanding_analysis_abbott/" /><meta property="og:image" content="images/share.png"/><meta property="article:section" content="notes" />
+
+
+
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="images/share.png"/>
+
+<meta name="twitter:title" content="Real Analysis"/>
+<meta name="twitter:description" content="Useful resources
+ video Prof. Francis Su (Rudin), Marc Renault (Abbott) notes Prof. Francis Su (Rudin) extra resources Spivak  MTH 320 has problem sets from the Abbott book with solutions. Useful to know which exercices to do optimally.
+1. The Real Numbers ATTACH  Difference upper bound, maximum and supremum (Example 1.3.5).  open interval \((0,2) = \{x \in \mathbb R: 0 &lt; x &lt; 2\}\) closed interval \([0,2] = \{x \in \mathbb R: 0 \leq x \leq 2\}\)  The open interval has no maximum (that is, the biggest element apart of the set) while the closed interval does."/>
+
+
+
+<meta itemprop="name" content="Real Analysis">
+<meta itemprop="description" content="Useful resources
+ video Prof. Francis Su (Rudin), Marc Renault (Abbott) notes Prof. Francis Su (Rudin) extra resources Spivak  MTH 320 has problem sets from the Abbott book with solutions. Useful to know which exercices to do optimally.
+1. The Real Numbers ATTACH  Difference upper bound, maximum and supremum (Example 1.3.5).  open interval \((0,2) = \{x \in \mathbb R: 0 &lt; x &lt; 2\}\) closed interval \([0,2] = \{x \in \mathbb R: 0 \leq x \leq 2\}\)  The open interval has no maximum (that is, the biggest element apart of the set) while the closed interval does.">
+
+<meta itemprop="wordCount" content="3159"><meta itemprop="image" content="images/share.png"/>
+<meta itemprop="keywords" content="" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: Inter, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #282832;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+    color: #222;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3, h4, h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size:14.5px;
+}
+
+a {
+    color: #3273dc;
+}
+
+.title {
+    text-decoration: none;
+    border: 0;
+}
+
+.title span {
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    color: #282832;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #2380ed;
+}
+
+#nav-title {
+    margin-right: auto;
+}
+
+nav a {
+    display: flex;
+}
+
+textarea {
+    width: 100%;
+    font-size: 16px;
+}
+
+input {
+    font-size: 16px;
+}
+
+content {
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+}
+
+pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+}
+
+div.highlight pre {
+    background-color: initial;
+    color: initial;
+}
+
+div.highlight code {
+    background-color: unset;
+    color: unset;
+}
+
+blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+}
+
+.helptext {
+    color: #777;
+    font-size: small;
+}
+
+.errorlist {
+    color: #eba613;
+    font-size: small;
+}
+
+ 
+ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.blog-posts li {
+    display: flex;
+}
+
+ul.blog-posts li span {
+    flex: 0 0 130px;
+}
+
+ul.blog-posts li a:visited {
+    color: #8b6fcb;
+}
+
+hr {
+    border: none;
+    border-top: 1px dashed #999;
+    color: #333;
+    overflow: visible;
+    height: 1px;
+    margin: 2em 0;
+}
+
+a[href$="/missing"] {
+    background-color: #E5E5E5;
+    color: #5D5D67;
+    padding: 0rem 0.2rem 0rem 0.2rem;
+}
+
+a[href^="http"] {
+    background-image: url(/img/external-link.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 1.3rem;
+}
+
+.related-wrapper {
+    column-count: 2;
+    display: grid;
+    grid-gap: 0.6rem 0.6rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.noteslist-feed {
+    color: #282832;
+    display: block;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.noteslist-feed h6 {
+    padding: 0.6rem 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.noteslist-feed:hover h6 {
+    color: #2380ed;
+}
+
+.excerpt {
+    color: #5D5D67;
+    text-decoration: none;
+    font-size: 14.5px;
+    margin: 0 0 0 0;
+}
+
+table {
+    display: table;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: left;
+    border: 0.1rem solid #bfbfbf;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+table th {
+    font-weight: 600;
+    padding: 0.3rem 0.6rem 0;
+    border-bottom: 0.1rem solid #000;
+}
+
+table td {
+    padding: 0.3rem 0.6rem 0;
+    border-bottom: 0.1rem solid #bfbfbf;
+}
+</style>
+<link rel="stylesheet" href=" style.css">
+</head>
+
+<body>
+  <header>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+<nav><a href="../../" class="title">
+    <h2 id="nav-title">James Rupert</h2>
+</a>
+
+<ul>
+
+  <li>
+    <a href="../../">About</a>
+  </li>
+
+  <li>
+    <a href="../../notes/">Notes</a>
+  </li>
+
+
+
+</ul>
+
+</nav>
+</header>
+  <main>
+<h1 style="padding-top: 2rem;">Real Analysis</h1>
+<hr>
+<content style="margin-top: 5rem;">
+  <p><code>Useful resources</code></p>
+<dl>
+<dt>video</dt>
+<dd><a href="https://www.youtube.com/playlist?list=PL0E754696F72137EC">Prof. Francis Su</a> (Rudin), <a href="https://www.youtube.com/playlist?list=PLysi2xmniDSzz6xT7IzOifpoexeKccThh">Marc Renault</a> (Abbott)</dd>
+<dt>notes</dt>
+<dd><a href="https://app.box.com/s/azhuul04awaihmims1vcff358a3nn0s0?sortColumn=name&amp;sortDirection=ASC">Prof. Francis Su</a> (Rudin)</dd>
+<dt>extra resources</dt>
+<dd>Spivak</dd>
+</dl>
+<p><a href="https://users.math.msu.edu/users/chamatth/320spring19.html">MTH 320</a> has problem sets from the Abbott book with solutions. Useful to know which exercices to do optimally.</p>
+<h2 id="1-dot-the-real-numbers">1. The Real Numbers <!-- raw HTML omitted --><!-- raw HTML omitted -->ATTACH<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<figure><img src="../../ox-hugo/_20230814_093218screenshot.png"/>
+</figure>
+
+<h3 id="difference-upper-bound-maximum-and-supremum--example-1-dot-3-dot-5--dot">Difference upper bound, maximum and supremum (Example 1.3.5).</h3>
+<ul>
+<li>open interval \((0,2) = \{x \in \mathbb R: 0 &lt; x &lt; 2\}\)</li>
+<li>closed interval \([0,2] = \{x \in \mathbb R: 0 \leq x \leq 2\}\)</li>
+</ul>
+<p>The open interval has no maximum (that is, the biggest element <em>apart</em> of the set) while the closed interval does. The supremum is the smallest possible upper bound of the set. These are both 2 for the open and closed interval. If the supremum is apart of the set, such as the case of the closed interval, it will also be the maximum.</p>
+<p>We can now see that not every non-empty bounded set has a maximum, such as the case of the open interval \((0,2)\). The Axiom of Completeness states that every nonempty bounded set does have a least upper bound (infimum).</p>
+<p>When looking at sets in other fields than \(\mathbb R\) such as \(\mathbb Q\), this axiom does not hold. Take the set \(S = \{r \in \mathbb Q: r^2 &lt; 2\}\). The least upper bound does not exist because it is a real number \(\sqrt 2\) that can not be expressed in terms of \(\mathbb Q\). We can only get so close by finding different upper bounds (141/100, 1415/1000, &hellip;), but never the <em>least</em> upper bound. Then, for any upper bound we find in \(\mathbb Q\), there will always be a smaller one.</p>
+<h3 id="consequences-of-completeness">Consequences of completeness</h3>
+<ul>
+<li>
+<p>Archimedean property</p>
+<p>In analysis, it is sometimes good practice to regard a quantifier ∀𝑥 as &ldquo;no matter how bad 𝑥 is, this still holds&rdquo;, for some notion of &ldquo;bad&rdquo;. Here there are different notions of bad: 𝑥 is bad when it is small while 𝑦 is bad when it is large.</p>
+<p>It apparently gives rise to the notion of infinitesimals: a number a is said to be infinitesimal w.r.t b when an integer multiple of a can not exceed another number b.</p>
+<p>\[n x &lt; y\]</p>
+<p>and a group is archimedean if there is no such number n for which the inequality holds.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://planetmath.org/archimedeanproperty">Planet Math - Archimedean Property</a></li>
+<li><a href="https://math.stackexchange.com/questions/265384/archimedean-property-and-real-numbers">StackExchange - Archimedean Property and Real Numbers</a></li>
+<li><a href="https://math.stackexchange.com/questions/1150808/help-explaining-the-existence-of-a-square-root-proof">Existence of Square Roots</a></li>
+</ul>
+<h3 id="exercices">Exercices</h3>
+<h4 id="exercise-1-dot-2-dot-1">Exercise 1.2.1</h4>
+<p><strong>Prove that \(\sqrt 3 \) is irrational. Does a similar agument work to show \(\sqrt 6\) is irrational?</strong></p>
+<p>Proof. Assume, to the contrary, that there exists integers \(p\) and \(q\) such that \(\sqrt 3\) is rational. Furthermore, assume that \(p\) and \(q\) do not have common factors such that the fraction
+\[\Big(\frac{p}{q}\Big)^2 = 3\]</p>
+<p>can not be simplified more. This can be rewritten to
+\[p^2 = 3 q^2\]</p>
+<p>meaning \(p^2\) is a multiple of \(3\) and so is \(p\). It then holds that \(p = 3r\) for any integer \(r\). Inserting \(3r\) into this previous equation results in:
+\[9r^2 = 3q^2\]
+\[3r^2 = q^2\]</p>
+<p>implying that \(q^2\) also is a multiple of \(3\). As we have shown that there is a common factor, we have reached a contradiction, and the original statement is true. \(\blacksquare\)</p>
+<p>A similar argument will be possible for \(\sqrt 6\): we will then conclude that they must be a multiple of \(2\) and \(3\), and &hellip;</p>
+<p><strong>Where does the proof of Theorem 1.1.1 break down if we try to use it to prove \(\sqrt{4}\) is irrational?</strong>
+\[\Big(\frac{p}{q}\Big)^2 = 4\]
+\[p^2 = 4q^2\]</p>
+<p>This does not imply \(p\) is a multiple of four, as \(p\) could be \(2\). \(4\) is a perfect square.</p>
+<h4 id="exercise-1-dot-2-dot-2">Exercise 1.2.2</h4>
+<p><strong>Show that there is no rational number \(r\) satisfying \(2^r = 3\).</strong></p>
+<p>Proof. Assume, to the contrary, that there is a rational number \(r\) such that \(2^r = 3\). Then there exist integers \(p, q\) such that \(r = \frac{p}{q}\). It follows that
+\[2^{\frac{p}{q}} = 3\]</p>
+<p>Taking the \(q\)-th power on both sides yields \(2^p = 3^q\). This leads to a contradiction as the left-hand side is an even number while the right-hand side is an odd number. \(\blacksquare\)</p>
+<h4 id="later-exercise-1-dot-2-dot-3"><em>LATER</em> Exercise 1.2.3</h4>
+<ol>
+<li>Consider \(A_1 = \{1, 2, \ldots\}, A_2 = \{2, 3, \ldots\}\) which has \(\bigcap_{n=1}^\infty A_n = \emptyset\).
+(these sets were mentioned in the chapter)</li>
+<li>True. Set \(A_j\) will be reached which will have a single common element with the other sets.
+(<strong>solution manual</strong>: apparently this result will become more clear in chapter 3 regarding compactness. Verify this when the time is right.)</li>
+<li>False. We can show this by either generating a few sets and calculating this, or by taking \(A = \emptyset\) which results in the LHS being empty while the RHS is equal to C (\(\emptyset = C\)).</li>
+<li>True (associative)</li>
+<li>True (diagram)</li>
+</ol>
+<h4 id="exercise-1-dot-2-dot-4">Exercise 1.2.4</h4>
+<p><strong>Produce an infinite collection of sets \(A_1, A_2, A_3, \ldots\) with the property that every \(A_i\) has an infinite number of elements, \(A_i \cap A_j = \emptyset\) for all \(i \neq j\) and \(\bigcup_{i=1}^{\infty} = \mathbb N\).</strong></p>
+<p>\(A_n = \{n, n+1, n+2, \ldots\}\) does not work, because \(A_1\) and \(A_2\) will have \(2, 3, \ldots\) in the intersection. Instead, an infinite way of  <strong>partitioning</strong> \(\mathbb N\) must be found instead.</p>
+<p>What this question is asking for us a way to find an infinite number of infinite disjoint sets that partition \(\mathbb N\).</p>
+<ul>
+<li><a href="https://math.stackexchange.com/questions/51096/partition-of-n-into-infinite-number-of-infinite-disjoint-sets">https://math.stackexchange.com/questions/51096/partition-of-n-into-infinite-number-of-infinite-disjoint-sets</a></li>
+<li><a href="https://math.stackexchange.com/questions/12629/partitioning-an-infinite-set/12632#12632">https://math.stackexchange.com/questions/12629/partitioning-an-infinite-set/12632#12632</a></li>
+</ul>
+<p>Let \(U_1\) be the set of positive odd numbers: {1, 3, 5, 7, 11, &hellip;}. Let \(U_2\) be the set of twice the positive odd numbers: {2, 6, 10, 14, &hellip;}. Let \(U_3\) be the set of four times the positive odd numbers (4, 12, 20, 28, &hellip;) and so on and so on.</p>
+<p>Then, \(U_n\) = the set of \(2^{n-1}\) times the positive odd numbers will be the set that partitions \(\mathbb N\).</p>
+<h4 id="exercise-1-dot-2-dot-5">Exercise 1.2.5</h4>
+<ol>
+<li>
+<p>If \(x \in (A \cup B)^c\), then \(x \in A \cup B\) so either \(x \notin A\) or \(x \notin B\) or both. This implies that \(x \in A^c\) or \(x \in B^c\) and thus \(x \in A^c \cup B^c\).</p>
+</li>
+<li>
+<p>Let \(x \in A^c \cup B^c\). This means that either \(x \in A^c\) or \(x \in B^c\) so \(x \notin A\) or \(x \notin B\). This implies \(x \notin A \cap B\) which is the same as \(x \in (A \cap B)^c\).</p>
+</li>
+<li>
+<p>We have to show \((A \cup B)^c = A^c \cap B^c\) by showing the inclusion both ways. This means we must show \((A \cup B)^c \subseteq A^c \cap B^c\) and \(A^c \cap B^c \subseteq (A \cup B)^c\).</p>
+<p>Proof.</p>
+<ol>
+<li>
+<p>The implication \((A \cup B)^c \subseteq A^c \cap B^c\)</p>
+<p>Assume that \(x \in (A \cup B)^c\), so \(x \notin A \cup B\). This means that \(x \notin A\) <em>and</em> /\(x \notin B\) (it is not in both bc of the union), which further implies that \(x \in A^c\) and \(x \in B^c\) and so \(x \in A^c \cap B^c\).</p>
+</li>
+<li>
+<p>The implication \(A^c \cap B^c \subseteq (A \cup B)^c\)</p>
+<p>Similarly, if \(x \in A^c \cap B^c\), we know that \(x \in A^c\) and a\(x \in B^c\). From this, \(x \notin A\) and \(x \notin B\). Furthermore, \(x \notin A \cup B\) and \(x \in (A \cup B)^c\).</p>
+</li>
+</ol>
+<p>As inclusion has been shown both ways, we have that w\((A \cup B)^c = A^c \cap B^c\). \(\blacksquare\)</p>
+</li>
+</ol>
+<h4 id="exercise-1-dot-2-dot-6">Exercise 1.2.6</h4>
+<ol>
+<li><strong>Verify the triangle inequality in the special case where \(a\) and \(b\) have the same sign</strong>.
+Triangle inequality: \(\vert a + b \vert \leq \vert a \vert + \vert b \vert\)
+<ol>
+<li>Case 1. \(a\) and \(b\) are both positive. Then \(\vert a \vert = a\) and \(\vert b \vert = b\) such that \(\vert a + b \vert = a + b = \vert a \vert + \vert b \vert\).</li>
+<li>Case 2. \(a\) and \(b\) are both negative. Then \(a &lt; 0, b &lt; 0\)  and so will \(a + b &lt; 0\). \(\vert a \vert = -a, \vert b \vert = -b\) such that \(\vert a +b \vert = - (a + b)\). It follows that \(\vert a + b \vert = -(a+b) = -a + (-b)= \vert a \vert + \vert b \vert\).</li>
+</ol>
+</li>
+</ol>
+<h4 id="exercise-1-dot-2-dot-7">Exercise 1.2.7</h4>
+<p><strong>Given a function \(f\) and a subset \(A\) of its domain, let \(f(A)\) represent the range of \(f\) over the set \(A\): that is, \(f(A) = \{f(x) : x \in A\}\).</strong></p>
+<ol>
+<li>
+<p><strong>Let \(f(x) = x^2\). If \(A = [0, 2]\) and \(B = [1,4]\), find \(f(A)\) and \(f(B)\). Does \(f(A \cap B) = f(A) \cap f(B)\) in this case? Does \(f(A \cup B) = f(A) \cup f(B)\)?</strong></p>
+<p>\(f(A) = [0, 4]\) and \(f(B) = [1, 16]\). \(A \cap B = [1, 2]\) and so \(f(A \cap B) = [1, 4]\) while \(f(A) \cap f(B) = [1, 4]\) so in this case they are equivalent.</p>
+<p>\(A \cup B = [0, 4]\) implies that \(f(A \cup B) = [0, 16]\) while \(f(A) \cup f(B) = [0, 16] \) so this is also equivalent.</p>
+</li>
+<li>
+<p><strong>Find two sets A and B for which \(f(A \cap B) \neq f(A) \cap f(B)\).</strong></p>
+<p>\(A = [-1, 0]\) and \(B = [0, 1]\) resulting in \(A \cap B = \{0\}\) and \(f(A \cap B) = \{0\}\) while \(f(A) \cap f(B) = \{1\}\).</p>
+</li>
+<li>
+<p><strong>Show that for an arbitrary function \(g : \mathbb R \rightarrow \mathbb R\), it is always true that \(g(A \cap B) \subseteq g(A) \cap g(B)\) for all sets \(A, B \subseteq \mathbb R\).</strong></p>
+<p>Proof. We must show that \(y \in g(A \cap B)\) implies \(y \in g(A) \cap g(B)\). If \(y \in g(A \cap B)\), there exists an \(x \in A \cap B\) such that \(g(x) = y\). This means that \(x \in A\) and \(x \in B\), and thus \(g(x) \in g(A) \) and \(g(x) \in g(B)\). We conclude that \(g(x) = g(A) \cap g(B)\). \(\blacksquare\)</p>
+</li>
+<li>
+<p><strong>Form and prove a conjecture about the relationship between \(g(A \cup B)\) and \(g(A) \cup g(B)\) for an arbitrary function \(g\).</strong></p>
+<p>My claim is that \(g(A \cup B) = g(A) \cup g(B)\) for any arbitrary function \(g\) and \(A, B \subseteq R\).</p>
+<p>Proof. We must show the following two inclusions:</p>
+<ol>
+<li>\(g(A \cup B) \subseteq g(A) \cup g(B)\)</li>
+<li>\(g(A) \cup g(B) \subseteq g(A \cup B)\)</li>
+</ol>
+<p>For (1), take an element \(y \in g(A \cup B)\), meaning there exists an \(x \in A \cup B\) such that \(g(x) = y\). Then, \(x \in A\) or \(x \in B\), which implies that either \(g(x) \in g(A)\) or \(g(x) \in g(B)\), revealing that \(g(x) \in g(A) \cup g(B)\). For the reverse inclusion (2), similarly assume that \(z \in g(A) \cup g(B)\). This means that either e\(z \in g(A)\) or \(z \in g(B)\) and thus there is an \(x \in A\) or \(x \in B\) such that \(g(x) = z\). This implies \(x \in A \cup B\) and hence \(g(x) = g(A \cup B)\). Because (1) and (2) have been shown to be true, we can conclude that \(g(A \cup B) = g(A) \cup g(B)\). \(\blacksquare\)</p>
+</li>
+</ol>
+<h4 id="notdone-exercise-1-dot-2-dot-8"><em>NOTDONE</em> Exercise 1.2.8</h4>
+<p><strong>Give an example of each or state that the request is impossible</strong>.</p>
+<ol>
+<li><strong>\(f : \mathbb N \rightarrow \mathbb N\) that is 1-1 but not onto</strong>.</li>
+</ol>
+<!-- raw HTML omitted -->
+<ol>
+<li><strong>\(f : \mathbb N \rightarrow \mathbb N\) that is onto but not 1-1</strong>.</li>
+</ol>
+<!-- raw HTML omitted -->
+<ol>
+<li><strong>\(f : \mathbb N \rightarrow \mathbb \mathbb Z\) that is 1-1 and onto</strong>.</li>
+</ol>
+<h4 id="incomplete-exercise-1-dot-2-dot-10"><em>INCOMPLETE</em> Exercise 1.2.10</h4>
+<p><strong>Decide which of the following are true statements. Provide a short justification for those that are valid and a counterexample for those that are not:</strong></p>
+<ol>
+<li>
+<p><strong>Two real numbers satisfy \(a &lt; b\) if and only if \(a &lt; b + \epsilon\) for every \(\epsilon &gt; 0\)</strong>.</p>
+<p>False. If \(a = b\) then \(a &lt; b + \epsilon\) for all \(\epsilon &gt; 0\) but \(a \nless b\).</p>
+</li>
+<li>
+<p><strong>Two real numbers satisfy \(a &lt; b\) if \(a &lt; b + \epsilon\) for every \(\epsilon &gt; 0\)</strong>.</p>
+<p>False. Consider \(a=b\), then \(a &lt; b + \epsilon\) for all \(\epsilon &gt; 0\) but this means \(a \nless b\).</p>
+</li>
+<li>
+<p><strong>Two real numbers satisfy \(a \leq b\) if and only if \(a &lt; b + \epsilon\) for every \(\epsilon &gt; 0\)</strong>.</p>
+<p>Proof. For the inclusion, suppose \(a &lt; b + \epsilon\) for every \(\epsilon &gt; 0\). This results in either \(a \leq b\) or \(a &gt; b\), but \(a &gt; b\) is impossible as the</p>
+</li>
+</ol>
+<h4 id="notdone-exercise-1-dot-2-dot-11"><em>NOTDONE</em> Exercise 1.2.11</h4>
+<p>Form the logical negation of each claim.</p>
+<ol>
+<li>
+<p><strong>For all real numbers satisfying \(a &lt; b\), there exists an \(n \in \mathbb N\) such that \(a + 1/n &lt; b\)</strong>.</p>
+</li>
+<li>
+<p><strong>There exists a real number \(x &gt; 0\) such that \(x &lt; 1/n\) for all \(n \in \mathbb N\)</strong>.</p>
+</li>
+<li>
+<p><strong>Between every two distinct real numbers there is a rational number</strong>.</p>
+</li>
+</ol>
+<h4 id="exercise-1-dot-2-dot-12">Exercise 1.2.12</h4>
+<p><strong>Let \(y_1 = 6\), and for each \(n \in \mathbb N\) define \(y_{n+1} = (2y_n -6) / 3\)</strong>.</p>
+<p><strong>Use induction to prove that the sequence satisfies \(y_n &gt; -6\) for all \(n \in \mathbb N\)</strong>.</p>
+<ul>
+<li>
+<p>Base case. Assume \(n=1\), then \(y_1 = 6\). Because \(6 &gt; -6\), the base case holds true.</p>
+</li>
+<li>
+<p>Induction hypothesis. Assume that \(y_n &gt; -6\). We now wish to prove that this will also be true for \(y_{n+1}\).</p>
+<p>\begin{align*}
+y_n &amp;&gt; -6 \\
+2y_n &amp;&gt; -12 \\
+2y_n - 6 &amp;&gt; -18 \\
+(2y_n - 6)/3 &amp;&gt; -6 \\
+\end{align*}</p>
+<p>Because the LHS is identical to \(y_{n+1}\), we conclude that \(y_{n+1} &gt; -6\).</p>
+</li>
+</ul>
+<p><strong>Use another induction argument to show the sequence \((y_1, y_2, y_3, \ldots)\) is decreasing</strong>.
+Induction argument: \(y_{n+1} \leq y_n\) for all values of \(n \in \mathbb N\).</p>
+<ul>
+<li>
+<p>Base case. For \(n=1\), we have \((2\cdot 6 - 6)/3 = 2 \leq 6\).</p>
+</li>
+<li>
+<p>Induction hypothesis. Suppose that \(y_{n+1} &lt; y_n\). <code>isn't this weird to assume, as if we already have the solution?</code></p>
+</li>
+<li>
+<p>Induction step.</p>
+<p>\begin{align*}
+y_{n+1} &amp;\leq y_n \\
+2y_{n+1} &amp;\leq 2y_n \\
+2y_{n+1} - 6 &amp;\leq 2y_n-6 \\
+(2y_{n+1} - 6)/3 &amp;\leq (2y_n-6)/3 \\
+y_{n+2} &amp;\leq y_{n+1}
+\end{align*}</p>
+<p>so \(y_n\) is decreasing. <em>An alternative is assuming \(y_{n-1} &gt; y_n\), and then this will get us the induction hypothesis we have right now as the result of our induction step</em>.</p>
+</li>
+</ul>
+<h4 id="exercise-1-dot-3-dot-3">Exercise 1.3.3</h4>
+<p><strong>Let \(A\) be nonempty and bounded below, and define \(B = \{b \in \mathbb R : b \text{ is a lower bound for } A\}\). Show that \(\sup B = \inf A\)</strong>.</p>
+<p>B contains all real numbers that are a lower bound for \(A\). This means each \(b \in B\) satisfies \(b \leq a\) for every \(a \in A\) (<em>Definition 1.3.1</em>). By definition, \(B\) is nonempty and bounded above by any element in \(A\). This means that \(B\) per the <em>Axiom of Completeness</em> has a least upper bound (supremum) and let \(s = \sup B\). \(s\) is an upper bound for \(B\) and if \(b\) is any other upper bound, then \(s \leq b\).</p>
+<p>Now that we have shown that B has a supremum, we must show that this supremum is a lower bound for \(A\). Take any \(a \in A\), then by definition of \(B\) we have that \(b \leq a\) for all \(b \in B\). Therefore, a is an upper bound for B. Since \(s\) is the least upper bound for \(A\), we have that \(s \leq a\) and thus \(s\) is a lower bound for \(A\).</p>
+<p>Next, we show that this lower bound is the greatest lower bound for \(A\). Let \(l\) be a lower bound for \(A\), it follows that \(l \in B\). Since \(s\) is an upper bound for \(B\) we have that \(l \leq s\). Therefore, \(s\) is the greatest lower bound and \(s = \inf A\).</p>
+<p><strong>Use (a) to explain why there is no need to assert that greatest lower bounds exist as part of the Axiom of Completeness</strong>.
+All we had to show that a greatest lower bound exist is that there is another set that consists of the elements of lower bounds of another set, being bound from above. This uses the Axiom of Completeness</p>
+<h4 id="exercise-1-dot-3-dot-4">Exercise 1.3.4</h4>
+<p><strong>Let \(A_1, A_2, A_3, \ldots\) be a collection of nonempty sets, each of which is bounded above</strong>.</p>
+<p><strong>Find a formula for \(\sup (A_1 \cup A_2)\). Extend this to \(\sup (\bigcup_{k=1}^n A_k)\)</strong>.</p>
+<p>The union of two sets consist of all elements \(a \in A_1\) or \(b \in A_2\). The supremum must then be biggest least upper bound of the two sets: \(\sup(A_1 \cup A_2) = \max (\sup A_1, \sup A_2)\).</p>
+<p>For inf: \(\sup ( \bigcup_{n=1}^N = \max(\sup A_1, \sup A_2, \ldots, \sup A_n))\)</p>
+<p><strong>Consider \(\sup (\bigcup_{k=1}^n A_k)\). Does the formula in (a) extend to the infinite case</strong>?</p>
+<p>No, because \(\bigcup_{k=1}^\infty A_k\) may be unbounded. Take for example \(A_n = [n, n+1]\).</p>
+<h4 id="exercise-1-dot-3-dot-6">Exercise 1.3.6</h4>
+<p><strong>Given sets \(A\) and \(B\), define \(A + B = \{a + b : a \in A \text{ and } b \in B\}\). Follow these steps to prove that if \(A\) and \(B\) are nonempty and bounded above then \(\sup(A+B) = \sup A + \sup B\)</strong>.</p>
+<p><strong>Let \(s = \sup A\) and \(t = \sup B\). Show \(s + t\)  is an upper bound for \(A + B\)</strong>.</p>
+<p>Because \(s=\sup A\) we have that \(a \leq s\) for all \(a \in A\) and \(t = \sup B\) implies that \(b \leq t\) for all \(b \in B\). It follows that by adding these two equations we have b\(a + b \leq s + t\).</p>
+<p><strong>Now let \(u\) be an arbitrary upper bound for \(A+B\) and temporarily fix \(a \in A\). Show \(t \leq u - a\)</strong>.</p>
+<p>\(u\) is an arbitrary upper bound for \(A + B\) so \(a + b \leq u\) for any \(b \in B\) (a is fixed) and so \(b \leq u - a\). Because \(b\) is fixed, \(u-a\) is an upper bound for \(B\). By the least upper bound definition for \(B\), \(t \leq u - a\).</p>
+<p><strong>Finally, show \(\sup(A+B) = s+t\)</strong>.</p>
+<p>We have that \(t \leq u - a \implies a \leq u-t\). Since \(a\) was arbitrary we have by the least upper bound definition for \(A\) that \(s \leq u - t \implies s + t \leq u\) where \(u\) was an upper bound. Therefore, \(s + t = \sup A + \sup B\) is the least upper bound.</p>
+<p><strong>Construct another proof of this same fact using Lemma 1.3.8</strong>.</p>
+<p>Let \(\epsilon &gt; 0\) be given. Then, by Lemma 1.3.8, there are elements \(a \in A, b \in B\) such that \(s - \epsilon/2 &lt; a\) and \(t - \epsilon/2 &lt; b\). Adding the equations:
+\[(s+t) - \epsilon &lt; a + b\]
+Therefore, after applying Lemma 1.3.8, we conclude that \(s+t = \sup A + \sup B\).</p>
+<h4 id="exercise-1-dot-3-dot-8">Exercise 1.3.8</h4>
+<p><strong>Compute, without proofs, the suprema and infima (if they exist) of the following sets</strong>.</p>
+<p>\(\{m/n : m, n \in \mathbb N \text{ with } m &lt; n\}\)</p>
+<ul>
+<li>sup = 1, inf = 0</li>
+</ul>
+<p>\(\{(-1)^m/n : m, n \in  \mathbb N \}\)</p>
+<ul>
+<li>sup = 1, inf = -1</li>
+</ul>
+<p>ii\(\{n/(3n+1) : n \in  \mathbb N \}\)</p>
+<ul>
+<li>sup = 1/3, inf = 1/4</li>
+</ul>
+<p>\(\{m/(m+n) : m, n \in  \mathbb N \}\)</p>
+<ul>
+<li>sup = 1, inf = 0</li>
+</ul>
+<h2 id="2-dot-sequences-and-series">2. Sequences and Series</h2>
+<h2 id="3-dot-basic-topology-of-r">3. Basic Topology of R</h2>
+<h2 id="4-dot-functional-limits-and-continuity">4. Functional Limits and Continuity</h2>
+<h2 id="5-dot-the-derivative">5. The Derivative</h2>
+<h2 id="6-dot-sequences-and-series-of-functions">6. Sequences and Series of Functions</h2>
+<h2 id="7-dot-the-riemann-integral">7. The Riemann Integral</h2>
+<h2 id="8-dot-additional-topics">8. Additional topics</h2>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer>
+</footer>
+
+    
+</body>
+
+</html>

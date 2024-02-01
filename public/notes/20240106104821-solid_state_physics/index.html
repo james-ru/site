@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="images/favicon.png" />
+<title>Solid-State Physics | James Rupert</title>
+<meta name="title" content="Solid-State Physics" />
+<meta name="description" content="8. Electron Levels in a Periodic Potential  StackExchange - Bloch&rsquo;s theorem  Born-Von Karman boundary condition
+\[ \psi(\mathbf r &#43; N_i \mathbf a_i) = \psi(\mathbf r), \hspace{1cm} i = 1, 2, 3\]
+where \(\mathbf a_i\) are three primitive vectors and \(N_i\) all integers where \(N = N_1 N_2 N_3\) is the total number of primitive cells in the crystal.
+ This means that we can move our wave function towards any amount of unit cell \(N_i\) in the direction of \(\mathbf a_i\) and we&rsquo;ll get the same wave function." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Solid-State Physics" />
+<meta property="og:description" content="8. Electron Levels in a Periodic Potential  StackExchange - Bloch&rsquo;s theorem  Born-Von Karman boundary condition
+\[ \psi(\mathbf r &#43; N_i \mathbf a_i) = \psi(\mathbf r), \hspace{1cm} i = 1, 2, 3\]
+where \(\mathbf a_i\) are three primitive vectors and \(N_i\) all integers where \(N = N_1 N_2 N_3\) is the total number of primitive cells in the crystal.
+ This means that we can move our wave function towards any amount of unit cell \(N_i\) in the direction of \(\mathbf a_i\) and we&rsquo;ll get the same wave function." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/notes/20240106104821-solid_state_physics/" /><meta property="og:image" content="images/share.png"/><meta property="article:section" content="notes" />
+
+
+
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="images/share.png"/>
+
+<meta name="twitter:title" content="Solid-State Physics"/>
+<meta name="twitter:description" content="8. Electron Levels in a Periodic Potential  StackExchange - Bloch&rsquo;s theorem  Born-Von Karman boundary condition
+\[ \psi(\mathbf r &#43; N_i \mathbf a_i) = \psi(\mathbf r), \hspace{1cm} i = 1, 2, 3\]
+where \(\mathbf a_i\) are three primitive vectors and \(N_i\) all integers where \(N = N_1 N_2 N_3\) is the total number of primitive cells in the crystal.
+ This means that we can move our wave function towards any amount of unit cell \(N_i\) in the direction of \(\mathbf a_i\) and we&rsquo;ll get the same wave function."/>
+
+
+
+<meta itemprop="name" content="Solid-State Physics">
+<meta itemprop="description" content="8. Electron Levels in a Periodic Potential  StackExchange - Bloch&rsquo;s theorem  Born-Von Karman boundary condition
+\[ \psi(\mathbf r &#43; N_i \mathbf a_i) = \psi(\mathbf r), \hspace{1cm} i = 1, 2, 3\]
+where \(\mathbf a_i\) are three primitive vectors and \(N_i\) all integers where \(N = N_1 N_2 N_3\) is the total number of primitive cells in the crystal.
+ This means that we can move our wave function towards any amount of unit cell \(N_i\) in the direction of \(\mathbf a_i\) and we&rsquo;ll get the same wave function.">
+
+<meta itemprop="wordCount" content="1185"><meta itemprop="image" content="images/share.png"/>
+<meta itemprop="keywords" content="" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: Inter, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #282832;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+    color: #222;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3, h4, h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size:14.5px;
+}
+
+a {
+    color: #3273dc;
+}
+
+.title {
+    text-decoration: none;
+    border: 0;
+}
+
+.title span {
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    color: #282832;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #2380ed;
+}
+
+#nav-title {
+    margin-right: auto;
+}
+
+nav a {
+    display: flex;
+}
+
+textarea {
+    width: 100%;
+    font-size: 16px;
+}
+
+input {
+    font-size: 16px;
+}
+
+content {
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+}
+
+pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+}
+
+div.highlight pre {
+    background-color: initial;
+    color: initial;
+}
+
+div.highlight code {
+    background-color: unset;
+    color: unset;
+}
+
+blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+}
+
+.helptext {
+    color: #777;
+    font-size: small;
+}
+
+.errorlist {
+    color: #eba613;
+    font-size: small;
+}
+
+ 
+ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.blog-posts li {
+    display: flex;
+}
+
+ul.blog-posts li span {
+    flex: 0 0 130px;
+}
+
+ul.blog-posts li a:visited {
+    color: #8b6fcb;
+}
+
+hr {
+    border: none;
+    border-top: 1px dashed #999;
+    color: #333;
+    overflow: visible;
+    height: 1px;
+    margin: 2em 0;
+}
+
+a[href$="/missing"] {
+    background-color: #E5E5E5;
+    color: #5D5D67;
+    padding: 0rem 0.2rem 0rem 0.2rem;
+}
+
+a[href^="http"] {
+    background-image: url(/img/external-link.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 1.3rem;
+}
+
+.related-wrapper {
+    column-count: 2;
+    display: grid;
+    grid-gap: 0.6rem 0.6rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.noteslist-feed {
+    color: #282832;
+    display: block;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.noteslist-feed h6 {
+    padding: 0.6rem 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.noteslist-feed:hover h6 {
+    color: #2380ed;
+}
+
+.excerpt {
+    color: #5D5D67;
+    text-decoration: none;
+    font-size: 14.5px;
+    margin: 0 0 0 0;
+}
+
+table {
+    display: table;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: left;
+    border: 0.1rem solid #bfbfbf;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+table th {
+    font-weight: 600;
+    padding: 0.3rem 0.6rem 0;
+    border-bottom: 0.1rem solid #000;
+}
+
+table td {
+    padding: 0.3rem 0.6rem 0;
+    border-bottom: 0.1rem solid #bfbfbf;
+}
+</style>
+<link rel="stylesheet" href=" style.css">
+</head>
+
+<body>
+  <header>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+<nav><a href="../../" class="title">
+    <h2 id="nav-title">James Rupert</h2>
+</a>
+
+<ul>
+
+  <li>
+    <a href="../../">About</a>
+  </li>
+
+  <li>
+    <a href="../../notes/">Notes</a>
+  </li>
+
+
+
+</ul>
+
+</nav>
+</header>
+  <main>
+<h1 style="padding-top: 2rem;">Solid-State Physics</h1>
+<hr>
+<content style="margin-top: 5rem;">
+  <h2 id="8-dot-electron-levels-in-a-periodic-potential">8. Electron Levels in a Periodic Potential</h2>
+<ul>
+<li><a href="https://physics.stackexchange.com/questions/111286/blochs-theorem">StackExchange - Bloch&rsquo;s theorem</a></li>
+</ul>
+<p><strong>Born-Von Karman boundary condition</strong></p>
+<p>\[ \psi(\mathbf r + N_i \mathbf a_i) = \psi(\mathbf r),  \hspace{1cm} i = 1, 2, 3\]</p>
+<p>where \(\mathbf a_i\) are three primitive vectors and \(N_i\) all integers where \(N = N_1 N_2 N_3\) is the total number of primitive cells in the crystal.</p>
+<ul>
+<li>This means that we can move our wave function towards any amount of unit cell \(N_i\) in the direction of \(\mathbf a_i\) and we&rsquo;ll get the same wave function.</li>
+<li>Essentially, &lsquo;wrapping&rsquo; the crystal such that the atoms on one edge of the crystal are neighbours to the atoms on the opposite edge, creating a topological loop.</li>
+</ul>
+<p>Applying Bloch&rsquo;s theorem and this BC, it can be found that
+\[\Delta \mathbf k = \frac{1}{N} \mathbf b_1 \cdot (\mathbf b_2 \times \mathbf b_3) \]</p>
+<ul>
+<li><em>The number of allowed wave vectors in a primitive cell of the reciprocal lattice is equal to the number of sites in the crystal</em>.</li>
+<li>In other words, \(\Delta \mathbf k = \frac{(2 \pi )^3}{V} \).</li>
+</ul>
+<p><strong>Crystal momentum</strong></p>
+<ul>
+<li>
+<p>Bloch&rsquo;s theorem introduces the wave vector \(\mathbf k\). In Sommerfeld theory, a similar free electron wave vector exists in the form of \(\mathbf p/\hbar\) where \(\mathbf p\) is the momentum of the electron. However, \(\mathbf k\) from Bloch is not proportional at all to this electronic momentum.</p>
+<p>If the momentum operator \(\mathbf p = -i\hbar \mathbf \nabla \) acts on \(\psi_{nk}\) (we have \(n\) possible bands for the \(k\)-th crystal momentum but this has not yet been formally defined), we get (the nabla acts on \(\mathbf r\)):</p>
+</li>
+</ul>
+<p>\begin{align}
+-i \hbar \nabla \psi_{n\mathbf k} &amp;= -ih \nabla (e^{i \mathbf k \cdot \mathbf r} u_{n \mathbf k} (\mathbf r)) \\
+&amp;= \hbar \mathbf k \psi_{n \mathbf k} - i \hbar e^{i \mathbf k \cdot \mathbf r} \nabla u_{n \mathbf k}(\mathbf r)
+\end{align}</p>
+<p>when using Bloch&rsquo;s theorem. This is not just a constant times \(\psi_{n\mathbf k}\), so \(\psi_{n\mathbf k}\) is <strong>not a momentum eigenstate</strong> as this is the form that we would expect from an eigenvalue equation.</p>
+<ul>
+<li>
+<p><strong>However</strong>, if \(u_{n\mathbf k} (\mathbf r) = \text{constant}\) the derivative becomes 0 and it will be an eigenstate. So, for non constant potentials, we have:</p>
+<p>\[\hat p \psi_{n \mathbf k} \neq \hbar \mathbf k \psi_{n \mathbf k}\]</p>
+</li>
+<li>
+<p>We emphasize it as a momentum as in some ways \(\hbar \mathbf k\) is a natural extension of \(\mathbf p\) in the case of a periodic potential (but it is not a momentum as we have just shown now).</p>
+</li>
+<li>
+<p>Until the semiclassical model, view \(\mathbf k\) as a quantum number characteristic of the translational symmetry of a periodic potential, just as the momentum \(\mathbf p\) is a quantum number characteristic of the fuller translational symmetry of free space.</p>
+</li>
+</ul>
+<p><strong>1st Brillouin Zone</strong></p>
+<ul>
+<li>Any \(\mathbf k^\prime\) not in the first Brillouin zone can be written as \(\mathbf k^\prime = \mathbf k + \mathbf K\) where \(\mathbf K\) is a RLV and \(\mathbf k\) does lie in the first zone.</li>
+</ul>
+<p><strong>Band structure</strong></p>
+<ul>
+<li>The eigenstates and eigenvalues are also periodic functions of \(\mathbf k\) in the reciprocal lattice:</li>
+</ul>
+<p>\begin{align*}
+\psi_{n, \mathbf k + \mathbf K} &amp;= \psi_{n \mathbf k}(\mathbf r) \\
+E_{n, \mathbf k + \mathbf K} &amp;= E_{n \mathbf k}
+\end{align*}</p>
+<ul>
+<li>This leads to a description of the energy levels of an electron in a periodic potential in terms of a family of continuous functions \(E_{n, \mathbf k}\) each with the periodicity of the reciprocal lattice. The information contained in these functions is referred top as the <strong>band structure of the solid.</strong></li>
+<li>For each \(n\), the set of levels specifiek by \(E_n(\mathbf k)\) is called an <strong>energy band</strong>.</li>
+<li><strong>Mean velocity of an electron in Bloch state</strong> \(\mathbf k\): an electron in a level specified by a band index \(n\) and wave vector \(E_n(\mathbf k)\) has a nonvanishing mean velocity given by
+\[\mathbf v_n(\mathbf k) = \frac{1}{\hbar} \nabla_{\mathbf k} E_n(\mathbf k) \]
+<ul>
+<li>There are <em>stationary/time-independent</em> levels for an electron in a periodic potential in spite of the interaction of the electron with the fixed lattice of ions. It moves forever without any degradation of its mean velocity.</li>
+<li>This is in contrast to Drude&rsquo;s idea that collisions were simply encounters between electron and a static ion.</li>
+</ul>
+</li>
+</ul>
+<p><strong>On Fermi surfaces</strong></p>
+<ul>
+<li>The number of states in a band is equal to the number of primitive cells in the crystal. Each level can accommodate two electrons. A configuration with a band gap can then arise <strong>only if</strong> the number of electrons per primitive cell is even (thought it need not arise).</li>
+</ul>
+<h2 id="9-dot-electrons-in-a-weak-periodic-potential">9. Electrons in a Weak Periodic Potential <!-- raw HTML omitted --><!-- raw HTML omitted -->ATTACH<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<figure><img src="../../ox-hugo/_20240106_131040screenshot.png"/>
+</figure>
+
+<ul>
+<li>The repeated-zone scheme emphasizes that a particular state at \(k\) can be described by any wave vector differing from \(k\) by a reciprocal lattice vector. It is however highly redundant: the same level is shown many times for all equivalent wave vectors \(k, k \pm K, k \pm 2K, \dots\).</li>
+<li>The mathematical separation of the two bands is reflected in a physical separation.
+<ul>
+<li>When the action of an external field changes an electron&rsquo;s wave vector, the presence of the energy gap <strong>requires</strong> that upon crossing the Bragg plane, the electron must emerge in a level whose energy remains in the original branch of \(E(\mathbf k)\).</li>
+</ul>
+</li>
+</ul>
+<h2 id="12-dot-the-semiclassical-model-of-electron-dynamics">12. The Semiclassical Model of Electron Dynamics <!-- raw HTML omitted --><!-- raw HTML omitted -->ATTACH<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<blockquote>
+<p>An intuitive understanding of the dynamical significance of the wave vector k can only be acquired when one considers the response of Bloch electrons to externally applied electromagnetic fields (Chapter 12). Only then does its full resemblance to p/h emerge.</p>
+</blockquote>
+<!-- raw HTML omitted -->
+<blockquote>
+<p>Perhaps a suitable attitude to take is this: If there were no underlying microscopic quantum theory ofelectrons in solids, one could still imagine a semiclassical mechanics (guessed by some late nineteenth-century Newton of crystalline spaces) that was brilliantly confirmed by its account of observed electronic behavior, just as classical mechanics was confirmed by its accounting for planetary motion, and only very much later given a more fundamental derivation as a limiting form of quantum mechanics.</p>
+</blockquote>
+<figure><img src="../../ox-hugo/_20240106_131946screenshot.png"/>
+</figure>
+
+<ul>
+<li>We can&rsquo;t think of collisions occuring with static ions as a mechanism to degrade the velocity, because Bloch electrons have been shown to take account of the fixed periodic array of ions and still have a nonvanishing velocity.</li>
+<li>This can be understood as a manifestation of the wave nature of electrons: in a periodic array of scatterers, a wave can propagate without attenuation because of coherent constructive interference of the scattered waves.</li>
+</ul>
+<p><strong>Semiclassical model</strong></p>
+<ul>
+<li>The semiclassical model predicts how, in the absence of collisions, \(\mathbf r\) and \(\mathbf k\) of each electron evolve in the presence of externally applied electric and magnetic fields.
+<ul>
+<li>An electron having both a position and wave vector is referred to as a wave packet.</li>
+</ul>
+</li>
+<li>This prediction will be based <strong>entirely</strong> on our knowledge of the band structure (the function \(E_n(\mathbf k)\)) and upon no other information about the periodic potential of the ions.</li>
+<li>The rate of change of an electron&rsquo;s momentum is given by the total force on the electron. The rate of change of an electron&rsquo;s <strong>crystal</strong> momentum is given by the next equation in which forces are exerted only by the external fields and not by the periodic field of the lattice.</li>
+</ul>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer>
+</footer>
+
+    
+</body>
+
+</html>

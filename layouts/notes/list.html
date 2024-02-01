@@ -1,0 +1,38 @@
+{{ define "main" }}
+<content>
+  {{ .Content }}
+
+<div class="related-wrapper">
+    {{ range .Pages }}
+    <div class="noteslist-feed">
+      <a href="{{ .Permalink }}"><h6>{{ .Title }}</h6>
+        <p class="excerpt">
+          {{ .Summary | truncate 60 "..." }}
+        </p>
+      </a>
+    </div>
+    {{ end }}
+</div>
+
+    <!-- <li> -->
+    <!--   <span> -->
+    <!--     <i> -->
+    <!--       <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate> -->
+    <!--         {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }} -->
+    <!--       </time> -->
+    <!--     </i> -->
+    <!--   </span> -->
+    <!--   <a href="{{ .Permalink }}">{{ .Title }}</a> -->
+    <!-- </li> -->
+  {{ if .Data.Singular }}
+  {{else}}
+    <small>
+      <div style="padding-top: 1rem;">
+        {{ range .Site.Taxonomies.tags }}
+        <a href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a>&nbsp;
+        {{ end }}
+      </div>
+    </small>
+    {{ end }}
+</content>
+{{ end }}
