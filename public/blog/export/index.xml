@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Notes on James Rupert</title>
-    <link>/notes/</link>
-    <description>Recent content in Notes on James Rupert</description>
+    <title>export on James Rupert</title>
+    <link>/blog/export/</link>
+    <description>Recent content in export on James Rupert</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language><atom:link href="/notes/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language><atom:link href="/blog/export/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Books</title>
       <link>/notes/20210830151320-books/</link>
@@ -48,19 +48,6 @@ When a letter is stressed, it will be written with a `. The following letters ch
       <guid>/notes/20231001102014-strength_training/</guid>
       <description>The following table is an outline of the strength training blocks I&amp;rsquo;ve followed the past year and shows the weight progression I&amp;rsquo;ve had using the programs. As a rule of thumb, the weights indicated roughly correspond to my 1RM at the end of a block.
    Program SQ BP DL OHP notes     4B - 8/02/2023 105 85 140 45    4B - 27/02/2023 110 90 145 47.</description>
-    </item>
-    
-    <item>
-      <title>University</title>
-      <link>/notes/20211114005646-university/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/notes/20211114005646-university/</guid>
-      <description>All courses I&amp;rsquo;ve taken up until now at university.
-MSc Nano-engineering Semester 1
- Mechanics Quantum Physics 1 Quantum Physics 2 Semiconductor Devices Semiconductor Physics Materials Physics and Technology for Nanoelectronics Nanostructured Bio-Macromolecules  Waivered:
- Applied linear algebra and differential equations  Semester 2
- Atom theory, chemical periodicity, and chemical bonding Electricity, magnetism, and waves Projectwork nanotechnology, nanoengineering and nanoscience Technology of integrated systems Chemistry on the nanometer scale Quantum information and introduction to quantum computation  Exempted</description>
     </item>
     
   </channel>

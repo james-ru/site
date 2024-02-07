@@ -12,10 +12,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/notes/20230709151342-quantum_mechanics/</guid>
-      <description>Sources
- Principles of Quantum Mechanics by Shankar Introduction to Quantum Mechanics, Griffiths Linear Algebra Done Right by Axler State space and operators by Bart Sorée, ch1 of his course  Shankar Mathematical Introduction (Shankar)
+      <description>Shankar Mathematical Introduction (Shankar)
  dual spaces explained  (image source: Chuang and Nielsen)
-Inner product spaces Definition An inner product space is a vector space with an inner product. Inner products can be seen as a generalization of the dot product, as dot products are only defined for \(\mathbb R\) and not other fields such as \(\mathbb C\).</description>
+Inner product spaces Definition An inner product space is a vector space with an inner product. Inner products can be seen as a generalization of the dot product, as dot products are only defined for \(\mathbb R\) and not other fields such as \(\mathbb C\).
+How is the inner product for complex vector spaces obtained? Let us consider the case of complex numbers to obtain this generalization.</description>
     </item>
     
   </channel>

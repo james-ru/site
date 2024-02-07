@@ -1,6 +1,10 @@
 {{ define "main" }}
-<h1 style="padding-top: 1rem;">{{ .Title }}</h1>
-<hr>
+
+<div style="padding-top: 1.1rem;">
+  <a href="/notes">&#8592;</a>
+</div>
+
+<h1 style="padding-top: 0.5rem;">{{ .Title }}</h1>
 <content style="margin-top: 5rem;">
   {{ .Content }}
 </content>

@@ -262,4 +262,98 @@ table td {
     padding: 0.3rem 0.6rem 0;
     border-bottom: 0.1rem solid #bfbfbf;
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #FAFAFC;
+        background-color: #262626;
+    }
+
+    h1, h2, h3, h4, h5, h6, h7, strong, b {
+        color: #FAFAFC
+    }
+
+    a {
+        color: #6D9EFF;
+    }
+
+    nav a {
+        color: #FAFAFC;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        color: #6D9EFF;
+    }
+
+    code {
+        background-color: #353535;
+    }
+
+    pre code {
+        color: #222;
+    }
+
+    div.highlight pre {
+        background-color: initial;
+        color: initial;
+    }
+
+    div.highlight code {
+        background-color: unset;
+        color: unset;
+    }
+
+    blockquote {
+        border-left: 1px solid #999;
+        color: #fafafc;
+    }
+
+    .helptext {
+        color: #777;
+    }
+
+    .errorlist {
+        color: #eba613;
+    }
+
+    hr {
+        border-top: 1px dashed #999;
+        color: #333;
+    }
+
+    a[href$="/missing"] {
+        background-color: #353535;
+        color: #FFFEFF;
+    }
+
+    .noteslist-feed {
+        color: #282832;
+        border-bottom: 1px solid #353535;
+    }
+
+    .noteslist-feed:hover h6 {
+        color: #6D9EFF;
+    }
+
+    .excerpt {
+        color: #FAFAFC;
+    }
+
+    table {
+        border-color: rgb(66, 66, 66);
+        color: rgb(232,230,227);
+    }
+
+
+    table th {
+        background-color: rgb(60, 60, 60);
+        border-color: rgb(60, 60, 60);
+    }
+
+    table td {
+        border-bottom: 0.1rem solid #bfbfbf;
+        border-color: rgb(66, 66, 66);
+    }
+}
 </style>

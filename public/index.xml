@@ -27,25 +27,14 @@ Bear is all you need to build a fantastic and optimized site or blog. It works p
     </item>
     
     <item>
-      <title>Essential French Grammar</title>
-      <link>/notes/20210910172433-essential_french_grammar/</link>
+      <title>Books</title>
+      <link>/notes/20210830151320-books/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/notes/20210910172433-essential_french_grammar/</guid>
-      <description>Consolidated notes on a consolidated book.
-How to Form Questions A Glossary of Grammatical Terms in English (based on English grammar)
-Parts of Speech  nouns things of all sorts - objects that you can see, ideas, places, qualities, groups, &amp;hellip; adjectives give specific information about nouns - size, color, weight, pleasantness, &amp;hellip; articles definite article the and indefinite article a verbs words that tell what action or condition/relationship is going on adverbs word that supplies additional information about a verb, adjective or another adverb (now, then, there, anywhere) - most words ending with -ly are ordinarily adverbs pronouns mention persons/objects/ nouns in general and take their place  There exist several types of pronouns:</description>
-    </item>
-    
-    <item>
-      <title>Mathematical Proofs</title>
-      <link>/notes/20230308230006-mathematical_proofs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/notes/20230308230006-mathematical_proofs/</guid>
-      <description>Resources:  Mathematical proofs - a transition to advanced mathematics started: somewhere in the first week of July 2022, Switzerland trip. One small pitfall: I skipped a lot of exercices that were a lot of work or lengthy. Not smart.
-  Slides: https://media.pearsoncmg.com/cmg/pmmg_mml_shared/Chartrand_4e/
-  Sets  subset A set \(A\) is called a subset of a set \(B\) if every element of \(A\) also belongs to \(B\). Notation: \(A \subseteq B\) proper subset A set \(A\) is a proper subset of a set \(B\) if \(A \subseteq B\) but \(A \neq B\).</description>
+      <guid>/notes/20210830151320-books/</guid>
+      <description>Reading list for 2024
+ When We Cease to Understand the World, Benjamin Labatut Confessions of a Mask, Yukio Mishima The Smartest Guys in the Room: The Amazing Rise and Scandalous Fall of Enron, Bethany Mclean Against the Gods: The Remarkable Story of Risk De helaasheid der dingen, Dimitri Verhulst The Maniac, Benjamin Labatut The Idiot, Fyodor Dostoevsky Tribe: On Homecoming and Belonging, Sebastian Junger  2023
+ 2001: A Space Odyssey, Arthur C.</description>
     </item>
     
     <item>
@@ -54,32 +43,10 @@ Parts of Speech  nouns things of all sorts - objects that you can see, ideas, pl
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/notes/20230709151342-quantum_mechanics/</guid>
-      <description>Sources
- Principles of Quantum Mechanics by Shankar Introduction to Quantum Mechanics, Griffiths Linear Algebra Done Right by Axler State space and operators by Bart Sorée, ch1 of his course  Shankar Mathematical Introduction (Shankar)
+      <description>Shankar Mathematical Introduction (Shankar)
  dual spaces explained  (image source: Chuang and Nielsen)
-Inner product spaces Definition An inner product space is a vector space with an inner product. Inner products can be seen as a generalization of the dot product, as dot products are only defined for \(\mathbb R\) and not other fields such as \(\mathbb C\).</description>
-    </item>
-    
-    <item>
-      <title>Reading List</title>
-      <link>/notes/20210830151320-books/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/notes/20210830151320-books/</guid>
-      <description>Reading list for 2024
- When We Cease to Understand the World, Benjamin Labatut Confessions of a Mask, Yukio Mishima Against the Gods: The Remarkable Story of Risk De helaasheid der dingen, Dimitri Verhulst The Maniac, Benjamin Labatut The Idiot, Fyodor Dostoevsky Tribe: On Homecoming and Belonging, Sebastian Junger  2023
- 2001: A Space Odyssey, Arthur C. Clarke The Three-Body Problem, Liu Cixin Foundation, Isaac Asimov The Making of the Atomic Bomb, Richard Rhodes Chip War: The Fight for the World&amp;rsquo;s Most Critical Technology, Chris Miller  2022</description>
-    </item>
-    
-    <item>
-      <title>Real Analysis</title>
-      <link>/notes/20230812185640-understanding_analysis_abbott/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/notes/20230812185640-understanding_analysis_abbott/</guid>
-      <description>Useful resources
- video Prof. Francis Su (Rudin), Marc Renault (Abbott) notes Prof. Francis Su (Rudin) extra resources Spivak  MTH 320 has problem sets from the Abbott book with solutions. Useful to know which exercices to do optimally.
-1. The Real Numbers ATTACH  Difference upper bound, maximum and supremum (Example 1.3.5).  open interval \((0,2) = \{x \in \mathbb R: 0 &amp;lt; x &amp;lt; 2\}\) closed interval \([0,2] = \{x \in \mathbb R: 0 \leq x \leq 2\}\)  The open interval has no maximum (that is, the biggest element apart of the set) while the closed interval does.</description>
+Inner product spaces Definition An inner product space is a vector space with an inner product. Inner products can be seen as a generalization of the dot product, as dot products are only defined for \(\mathbb R\) and not other fields such as \(\mathbb C\).
+How is the inner product for complex vector spaces obtained? Let us consider the case of complex numbers to obtain this generalization.</description>
     </item>
     
     <item>
@@ -88,21 +55,19 @@ Inner product spaces Definition An inner product space is a vector space with an
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/notes/20220630222029-russian/</guid>
-      <description>The New Penguin Russian Course 2. Russian Handwriting: More on Pronunciation 2.2 Word stress Just like in English, the stress of words can influence the pronunciation of words and must be memorized.
+      <description>2. Russian Handwriting: More on Pronunciation 2.2 Word stress Just like in English, the stress of words can influence the pronunciation of words and must be memorized.
 When a letter is stressed, it will be written with a `. The following letters change in &amp;lsquo;pronunciation&amp;rsquo;:
    letter not stressed stressed     о [а] [о]    2.5/2.6 Softness and hardness of consonants  Soft means that the consonant is pronounced with a simultaneous y sound Hard means pronounced like English consonants  Examples:</description>
     </item>
     
     <item>
-      <title>Solid-State Physics</title>
-      <link>/notes/20240106104821-solid_state_physics/</link>
+      <title>Strength Training</title>
+      <link>/notes/20231001102014-strength_training/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/notes/20240106104821-solid_state_physics/</guid>
-      <description>8. Electron Levels in a Periodic Potential  StackExchange - Bloch&amp;rsquo;s theorem  Born-Von Karman boundary condition
-\[ \psi(\mathbf r + N_i \mathbf a_i) = \psi(\mathbf r), \hspace{1cm} i = 1, 2, 3\]
-where \(\mathbf a_i\) are three primitive vectors and \(N_i\) all integers where \(N = N_1 N_2 N_3\) is the total number of primitive cells in the crystal.
- This means that we can move our wave function towards any amount of unit cell \(N_i\) in the direction of \(\mathbf a_i\) and we&amp;rsquo;ll get the same wave function.</description>
+      <guid>/notes/20231001102014-strength_training/</guid>
+      <description>The following table is an outline of the strength training blocks I&amp;rsquo;ve followed the past year and shows the weight progression I&amp;rsquo;ve had using the programs. As a rule of thumb, the weights indicated roughly correspond to my 1RM at the end of a block.
+   Program SQ BP DL OHP notes     4B - 8/02/2023 105 85 140 45    4B - 27/02/2023 110 90 145 47.</description>
     </item>
     
     <item>

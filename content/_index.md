@@ -11,4 +11,4 @@ The semiconductor industry piqued my interest after graduating and made me enrol
 
 ---
 
-[LinkedIn](https://linkedin.com/in/james-rupert) - [GitHub](https://github.com/james-ru) - [Resume](JamesRupert_cv.pdf)
+[LinkedIn](https://linkedin.com/in/james-rupert) - [GitHub](https://github.com/james-ru) - [Photography](https://photos.jamesrupert.be) - [Resume](JamesRupert_cv.pdf)

@@ -4,7 +4,7 @@ body {
     font-family: Inter, sans-serif;
     margin: auto;
     padding: 20px;
-    max-width: 720px;
+    max-width: 800px;
     text-align: left;
     background-color: #fff;
     word-wrap: break-word;
@@ -260,4 +260,91 @@ table th {
 table td {
     padding: 0.3rem 0.6rem 0;
     border-bottom: 0.1rem solid #bfbfbf;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #282832;
+        background-color: #262626;
+    }
+
+    a {
+        color: #3273dc;
+    }
+
+    nav a {
+        color: #282832;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        color: #2380ed;
+    }
+
+    code {
+        background-color: #353535;
+    }
+
+    pre code {
+        color: #222;
+    }
+
+    div.highlight pre {
+        background-color: initial;
+        color: initial;
+    }
+
+    div.highlight code {
+        background-color: unset;
+        color: unset;
+    }
+
+    blockquote {
+        border-left: 1px solid #999;
+        color: #222;
+    }
+
+
+    .helptext {
+        color: #777;
+    }
+
+    .errorlist {
+        color: #eba613;
+    }
+
+    hr {
+        border-top: 1px dashed #999;
+        color: #333;
+    }
+
+    a[href$="/missing"] {
+        background-color: #E5E5E5;
+        color: #5D5D67;
+    }
+
+    .noteslist-feed {
+        color: #282832;
+        border-bottom: 1px solid #E5E5E5;
+    }
+
+    .noteslist-feed:hover h6 {
+        color: #2380ed;
+    }
+
+    .excerpt {
+        color: #5D5D67;
+    }
+
+    table {
+        border: 0.1rem solid #bfbfbf;
+    }
+
+    table th {
+        border-bottom: 0.1rem solid #000;
+    }
+
+    table td {
+        border-bottom: 0.1rem solid #bfbfbf;
+    }
 }

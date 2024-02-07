@@ -1,17 +1,9 @@
 +++
 title = "Quantum Mechanics"
 author = ["James"]
-tags = ["todo", "physics"]
+tags = ["export", "todo", "physics"]
 draft = false
 +++
-
-Sources
-
--   Principles of Quantum Mechanics by Shankar
--   Introduction to Quantum Mechanics, Griffiths
--   Linear Algebra Done Right by Axler
--   State space and operators by Bart Sorée, ch1 of his course
-
 
 ## Shankar Mathematical Introduction {#shankar-mathematical-introduction}
 

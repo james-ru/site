@@ -317,6 +317,100 @@ table td {
     padding: 0.3rem 0.6rem 0;
     border-bottom: 0.1rem solid #bfbfbf;
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #FAFAFC;
+        background-color: #262626;
+    }
+
+    h1, h2, h3, h4, h5, h6, h7, strong, b {
+        color: #FAFAFC
+    }
+
+    a {
+        color: #6D9EFF;
+    }
+
+    nav a {
+        color: #FAFAFC;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        color: #6D9EFF;
+    }
+
+    code {
+        background-color: #353535;
+    }
+
+    pre code {
+        color: #222;
+    }
+
+    div.highlight pre {
+        background-color: initial;
+        color: initial;
+    }
+
+    div.highlight code {
+        background-color: unset;
+        color: unset;
+    }
+
+    blockquote {
+        border-left: 1px solid #999;
+        color: #fafafc;
+    }
+
+    .helptext {
+        color: #777;
+    }
+
+    .errorlist {
+        color: #eba613;
+    }
+
+    hr {
+        border-top: 1px dashed #999;
+        color: #333;
+    }
+
+    a[href$="/missing"] {
+        background-color: #353535;
+        color: #FFFEFF;
+    }
+
+    .noteslist-feed {
+        color: #282832;
+        border-bottom: 1px solid #353535;
+    }
+
+    .noteslist-feed:hover h6 {
+        color: #6D9EFF;
+    }
+
+    .excerpt {
+        color: #FAFAFC;
+    }
+
+    table {
+        border-color: rgb(66, 66, 66);
+        color: rgb(232,230,227);
+    }
+
+
+    table th {
+        background-color: rgb(60, 60, 60);
+        border-color: rgb(60, 60, 60);
+    }
+
+    table td {
+        border-bottom: 0.1rem solid #bfbfbf;
+        border-color: rgb(66, 66, 66);
+    }
+}
 </style>
 <link rel="stylesheet" href=" style.css">
 </head>
@@ -353,8 +447,12 @@ table td {
 </nav>
 </header>
   <main>
-<h1 style="padding-top: 2rem;">University</h1>
-<hr>
+
+<div style="padding-top: 1.1rem;">
+  <a href="../../notes">&#8592;</a>
+</div>
+
+<h1 style="padding-top: 0.5rem;">University</h1>
 <content style="margin-top: 5rem;">
   <p>All courses I&rsquo;ve taken up until now at university.</p>
 <h2 id="msc-nano-engineering">MSc Nano-engineering</h2>

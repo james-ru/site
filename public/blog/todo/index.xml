@@ -7,26 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language><atom:link href="/blog/todo/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mathematical Proofs</title>
-      <link>/notes/20230308230006-mathematical_proofs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/notes/20230308230006-mathematical_proofs/</guid>
-      <description>Resources:  Mathematical proofs - a transition to advanced mathematics started: somewhere in the first week of July 2022, Switzerland trip. One small pitfall: I skipped a lot of exercices that were a lot of work or lengthy. Not smart.
-  Slides: https://media.pearsoncmg.com/cmg/pmmg_mml_shared/Chartrand_4e/
-  Sets  subset A set \(A\) is called a subset of a set \(B\) if every element of \(A\) also belongs to \(B\). Notation: \(A \subseteq B\) proper subset A set \(A\) is a proper subset of a set \(B\) if \(A \subseteq B\) but \(A \neq B\).</description>
-    </item>
-    
-    <item>
       <title>Quantum Mechanics</title>
       <link>/notes/20230709151342-quantum_mechanics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/notes/20230709151342-quantum_mechanics/</guid>
-      <description>Sources
- Principles of Quantum Mechanics by Shankar Introduction to Quantum Mechanics, Griffiths Linear Algebra Done Right by Axler State space and operators by Bart Sorée, ch1 of his course  Shankar Mathematical Introduction (Shankar)
+      <description>Shankar Mathematical Introduction (Shankar)
  dual spaces explained  (image source: Chuang and Nielsen)
-Inner product spaces Definition An inner product space is a vector space with an inner product. Inner products can be seen as a generalization of the dot product, as dot products are only defined for \(\mathbb R\) and not other fields such as \(\mathbb C\).</description>
+Inner product spaces Definition An inner product space is a vector space with an inner product. Inner products can be seen as a generalization of the dot product, as dot products are only defined for \(\mathbb R\) and not other fields such as \(\mathbb C\).
+How is the inner product for complex vector spaces obtained? Let us consider the case of complex numbers to obtain this generalization.</description>
     </item>
     
   </channel>
